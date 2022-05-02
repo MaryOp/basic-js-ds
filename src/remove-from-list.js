@@ -42,22 +42,19 @@ function removeKFromList(l, k) {
 
   function convertArrayToList(result) {
       result.forEach((element) => {
-      // this.node = new ListNode(element);
-      // this.next = next;
-      // console.log(element);
       resultList = new ListNode(element)
     }  
       )}
     
   // console.log(resultList + " resultList");
   resultList = convertArrayToList(result);
-  console.log(convertArrayToList(result));
+  // console.log(convertArrayToList(result));
   // console.log(resultList);
-  return resultList;
+  return resultList.value;
 }
 
-// module.exports = {
-//   removeKFromList
-// };
+module.exports = {
+  removeKFromList
+};
 
-console.log(removeKFromList([3, 1, 2, 3, 4, 5],[1, 2, 4, 5]))
+// console.log(removeKFromList([1, 2, 3, 3, 4, 5],[1, 2, 4, 5]))
